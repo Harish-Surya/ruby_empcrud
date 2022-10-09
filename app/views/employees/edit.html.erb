@@ -1,0 +1,9 @@
+<h1>Editing Employee</h1>
+
+<%= render "form", employee: @employee %>
+<div>
+  <button type="button" class="btn btn-light">
+  <%= link_to "Show this employee", @employee %>
+  <button type="button" class="btn btn-light">
+  <%= link_to "Back to employees", employees_path %>
+</div>

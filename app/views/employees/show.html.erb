@@ -1,0 +1,14 @@
+First Employee
+<p style="color: dark"><%= notice %></p>
+
+<%= render @employee %>
+<div>
+  <button type="button" class="btn btn-light">
+  <%= link_to "Edit this Employee", edit_employee_path(@employee) %>
+
+  <button type="button" class="btn btn-light">
+  <%= link_to "Back to Employees", employees_path %>
+
+  <%= button_to "Delete Employee", @employees, method: :delete, class:"btn btn-light" %>
+
+</div>
